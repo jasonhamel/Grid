@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
     Write your CSS here 
     Gap Colour: #000
     White: #F0F1EC
@@ -19,11 +18,67 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
-  </style>
-</head>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .wholeThing {
+        display: grid;
+        width: 748px;
+        height: 748px;
+        grid-template-rows: 414px 130px 155px 22px;
+        grid-template-columns: 320px 198px 153px 50px;
+        gap: 9px;
+        background-color: black;
+      }
+      .bigRed {
+        background-color: #e72f24;
+      }
+      .biggestWhite {
+        background-color: #f0f1ec;
+        grid-column: 2 / 5;
+      }
+      .secondBiggestWhite {
+        background-color: #f0f1ec;
+        grid-row: 2 / 4;
+      }
+      .thirdBiggestWhite {
+        background-color: #f0f1ec;
+        grid-area: 2 / 2 / 4 / 4;
+      }
+      .blue {
+        background-color: #004592;
+        margin-bottom: 10px;
+      }
+      .sideWhite {
+        background-color: #f0f1ec;
+        grid-row: 3 / 5;
+      }
+      .bottomWhite {
+        background-color: #f0f1ec;
+      }
+      .yellow {
+        background-color: #f9d01e;
+      }
+      .black {
+        background-color: #232629;
+      }
+    </style>
+  </head>
 
-<body>
-  <!-- Write your HTML here -->
-</body>
-
+  <body>
+    <div class="wholeThing">
+      <div class="bigRed"></div>
+      <div class="biggestWhite"></div>
+      <div class="secondBiggestWhite"></div>
+      <div class="thirdBiggestWhite"></div>
+      <div class="blue"></div>
+      <div class="sideWhite"></div>
+      <div class="bottomWhite"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+  </body>
 </html>
